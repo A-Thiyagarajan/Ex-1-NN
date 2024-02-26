@@ -1,5 +1,5 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME: Thiyagarajan A</H3>
+<H3>ENTER YOUR REGISTER NO: 212222240110</H3>
 <H3>EX. NO.1</H3>
 <H3>DATE</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
@@ -37,11 +37,64 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
 
+### Importing Libraries
+```
+import pandas as pd                                                
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+```
+
+### Read the dataset from drive
+```
+df=pd.read_csv("Churn_Modelling.csv",index_col="RowNumber")         
+df.head()
+```
+
+### Finding Missing Values
+```
+df.isnull().sum()
+```
+
+### Check For Duplicates
+```
+df.duplicated().sum()
+```
+
+### Detect Outliers
+```
+df=df.drop(['Surname', 'Geography','Gender'], axis=1)
+```
+
+### Normalize the dataset
+```
+scaler=StandardScaler()                                             
+df=pd.DataFrame(scaler.fit_transform(df))
+df.head()
+```
+
+### Split the dataset into input and output
+```
+X,Y=df.iloc[:,:-1].values ,df.iloc[:,-1].values                     
+print('Input:\n',X,'\nOutput:\n',Y)
+```
+
+### Splitting the data for training & Testing
+```
+Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.2)
+```
+
+### Print the training data and testing data
+```
+print("Xtrain:\n" ,Xtrain, "\nXtest:\n", Xtest)                     
+print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)
+```
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+
+
 
 
 ## RESULT:
