@@ -94,6 +94,35 @@ print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)
 
 ## OUTPUT:
 
+### DATASET:
+
+![dataset](https://github.com/A-Thiyagarajan/Ex-1-NN/assets/118707693/dba00100-37a2-4fd7-bcb5-e958fd856a90)
+
+
+
+### NULL VALUES: 
+
+![null](https://github.com/A-Thiyagarajan/Ex-1-NN/assets/118707693/fb01ba7f-6939-4dc0-91c8-10f8830f86eb)
+
+
+
+### NORMALIZED DATA:
+![normal](https://github.com/A-Thiyagarajan/Ex-1-NN/assets/118707693/dd0952e8-060e-467a-a458-9da31a458c01)
+
+
+
+
+### DATA SPLITTING:
+
+![data_split](https://github.com/A-Thiyagarajan/Ex-1-NN/assets/118707693/1de19d69-efd4-491d-8f35-726bce258365)
+
+
+
+
+### TRAIN AND TEST DATA: 
+
+![xy](https://github.com/A-Thiyagarajan/Ex-1-NN/assets/118707693/97ce919c-9c60-4052-bebb-d7ca55cb84d4)
+
 
 
 
