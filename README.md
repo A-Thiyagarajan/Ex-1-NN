@@ -47,7 +47,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 ```
 
-### Read the dataset from drive
+### Read the dataset
 ```
 df=pd.read_csv("Churn_Modelling.csv",index_col="RowNumber")         
 df.head()
